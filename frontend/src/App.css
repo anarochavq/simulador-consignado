@@ -1,0 +1,109 @@
+
+.results-section {
+  margin-top: 28px;
+  padding: 24px;
+  border: 1px solid #e4ebe6;
+  border-radius: 18px;
+  background: white;
+}
+
+.results-section h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.results-description {
+  margin: 0 0 20px;
+  color: #718078;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.result-card {
+  padding: 18px;
+  border: 1px solid #e4ebe6;
+  border-radius: 12px;
+}
+
+.result-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.result-top h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.status {
+  padding: 6px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.status-approved {
+  background: #e6f6eb;
+  color: #176b50;
+}
+
+.status-rejected {
+  background: #fff0ee;
+  color: #b42318;
+}
+
+.status-pending {
+  background: #fff5db;
+  color: #8a5b00;
+}
+
+.status-unavailable {
+  background: #eef1f3;
+  color: #53616a;
+}
+
+.bank-message {
+  min-height: 38px;
+  color: #65766e;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.result-label {
+  margin: 18px 0 4px;
+  color: #65766e;
+  font-size: 12px;
+}
+
+.result-value {
+  margin: 0 0 18px;
+  color: #176b50;
+  font-size: 27px;
+  font-weight: 750;
+}
+
+.result-detail {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid #edf1ee;
+  font-size: 12px;
+}
+
+.result-detail span {
+  color: #65766e;
+}
+
+.submit-button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
