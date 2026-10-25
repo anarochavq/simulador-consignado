@@ -101,27 +101,11 @@ function App() {
   }
 
   return (
-    <main className="page">
-      <header className="header">
-        <div className="brand">
-          <span className="brand-icon">C</span>
-          <span>
-            Consigna<span className="brand-highlight">Fácil</span>
-          </span>
-        </div>
-
-        <span className="header-label">
-          Simulação de empréstimo
-        </span>
-      </header>
-
-      <section className="intro">
-        <span className="eyebrow">
-          SIMPLES • RÁPIDO • TRANSPARENTE
-        </span>
-        <h1>
-          Seu próximo passo começa <span>aqui.</span>
-        </h1>
+  <main className="page">
+    <section className="intro">
+      <h1>
+        Simulação de empréstimo <span>consignado.</span>
+      </h1>
         <p>
           Preencha seus dados e compare as condições simuladas
           em diferentes instituições financeiras.
@@ -132,22 +116,18 @@ function App() {
         <div className="form-heading">
           <div>
             <h2>Seus dados</h2>
-            <p>Preencha os campos para iniciar a simulação.</p>
           </div>
-          <span className="step-label">ETAPA 1 DE 1</span>
         </div>
 
         <form onSubmit={handleSubmit}>
-          <div className="section-label">DADOS PESSOAIS</div>
 
           <div className="field">
             <label htmlFor="name">Nome completo</label>
             <input
               id="name"
               value={name}
-              onChange={(event) => setName(event.target.value)}
+              onChange={(e) => setName(e.target.value)}
               placeholder="Digite seu nome completo"
-              required
             />
           </div>
 
@@ -190,7 +170,7 @@ function App() {
             </div>
           </div>
 
-          <div className="section-label section-spaced">
+          <div className="section-label section-spaced titulo-emprestimo">
             DADOS DO EMPRÉSTIMO
           </div>
 
@@ -239,10 +219,9 @@ function App() {
           </div>
 
           <div className="notice">
-            <span className="notice-icon">i</span>
+            <span className="notice-icon"></span>
             <p>
               Simulação fictícia para fins demonstrativos.
-              Não representa uma oferta real de crédito.
             </p>
           </div>
 
@@ -310,10 +289,6 @@ function App() {
           </div>
         </section>
       )}
-
-      <footer>
-        <p>ConsignaFácil · Projeto demonstrativo</p>
-      </footer>
     </main>
   )
 }

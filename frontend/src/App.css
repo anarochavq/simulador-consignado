@@ -1,4 +1,3 @@
-
 .results-section {
   margin-top: 28px;
   padding: 24px;
@@ -103,7 +102,105 @@
   color: #65766e;
 }
 
+.form-heading {
+  margin-bottom: 40px;
+}
+
+.field {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+
+  width: 80%;
+  margin: 0;
+  margin-left: calc(10% - 60px);
+  margin-bottom: 24px;
+}
+
+.field label {
+  text-align: right;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.section-label {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-left: 10px;
+  font-weight: bold;
+  color: white;
+  box-sizing: border-box;
+}
+
+.section-spaced {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  width: 40%;
+  padding: 16px 20px;
+  margin: 20px auto;
+
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
 .submit-button:disabled {
   opacity: 0.7;
   cursor: wait;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+@media (max-width: 600px) {
+  .field {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .field label {
+    text-align: left;
+  }
+
+  .section-label {
+    width: 100%;
+  }
+
+  .submit-button {
+    width: 80%;
+  }
 }
