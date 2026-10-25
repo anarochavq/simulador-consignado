@@ -1,8 +1,6 @@
 # simulador-consignado
 Simulador de empréstimo consignado com integração a APIs bancárias fictícias.
 
-# Simulador de Empréstimo Consignado
-
 Aplicação web desenvolvida como parte de um desafio técnico para estágio em desenvolvimento. O sistema permite simular um empréstimo consignado e consultar os resultados de avaliação de diferentes bancos simulados.
 
 ## Funcionalidades
